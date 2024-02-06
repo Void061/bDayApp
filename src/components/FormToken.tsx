@@ -21,16 +21,16 @@ const FormToken = () => {
       data-aos="zoom-out">
       <form
         onSubmit={validatePerson}
-        className="grid grid-cols-2">
+        className="grid grid-cols-2 gap-4">
         <input
           onChange={handleToken}
           type="text"
           placeholder="Inserisci il tuo token"
-          className="border-0 outline-none p-2 rounded-[5px]"
+          className="border-0 outline-none p-2 rounded-[5px] col-span-2"
         />
         <button
           type="submit"
-          className="outline-none border-0 bg-gradient-to-r from-[#F0B056] to-[#B220E3] px-2 w-[80px] h-[40px] rounded-full flex items-center justify-center">
+          className="outline-none border-0 bg-gradient-to-r from-[#F0B056] to-[#B220E3] px-2 w-[80px] h-[40px] rounded-full flex items-center justify-center col-span-1">
           <svg
             className="w-[30px] h-[30px]"
             width="40px"
