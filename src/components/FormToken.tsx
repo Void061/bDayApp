@@ -19,7 +19,7 @@ const FormToken = () => {
 
   return (
     <div
-      className="glassmorph max-w-[800px] p-6  flex flex-col "
+      className="glassmorph max-w-[50%] p-6  flex flex-col "
       data-aos="zoom-out">
       <form onSubmit={validatePerson} className="flex gap-4 items-center">
         <input
