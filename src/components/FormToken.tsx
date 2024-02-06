@@ -3,9 +3,7 @@ import { useState } from "react";
 import { setCurrentPerson } from "../features/people/peopleSlice";
 const FormToken = () => {
   const dispatch = useAppDispatch();
-  const { error } = useAppSelector(
-    (store) => store.people
-  );
+  const { error } = useAppSelector((store) => store.people);
   const [token, setToken] = useState("");
 
   const validatePerson = (e: React.FormEvent<HTMLFormElement>) => {
@@ -21,7 +19,9 @@ const FormToken = () => {
     <div
       className="glassmorph max-w-[800px] p-6  flex flex-col "
       data-aos="zoom-out">
-      <form onSubmit={validatePerson} className="flex gap-4 items-center">
+      <form
+        onSubmit={validatePerson}
+        className="flex gap-4 items-center flex-wrap">
         <input
           onChange={handleToken}
           type="text"
