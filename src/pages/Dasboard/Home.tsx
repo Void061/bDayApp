@@ -1,47 +1,14 @@
-import { Link } from "react-router-dom";
-import { useAppSelector, useAppDispatch } from "../../hooks";
-import { increment } from "../../features/counter/counterSlice";
-import { Joke } from "../../components";
+import { useAppSelector } from "../../hooks";
+import { FormToken, Letter } from "../../components";
 
-const Home = () => {
-  const { value } = useAppSelector((store) => store.counter);
-  const dispatch = useAppDispatch();
+const Home: React.FC = () => {
+  const { currentPerson } = useAppSelector(
+    (store) => store.people
+  );
 
   return (
-    <div className="flex flex-col  ">
-      <div className="flex">
-        <h1>DASHBOARD - HOME</h1>
-      </div>
-
-      <div className="flex flex-col py-[10px] gap-[20px]">
-        <div>
-          <Link
-            className="text-red-800 font-medium bg-green-300 p-2 rounded-md"
-            to="/orders">
-            GO TO ORDERS
-          </Link>
-        </div>
-        <div>
-          <Link
-            className="text-red-800 font-medium bg-green-300 p-2 rounded-md"
-            to="/login">
-            GO TO LOGIN
-          </Link>
-        </div>
-      </div>
-
-      <div className="flex">
-        <button
-          data-aos="fade-right"
-          className="bg-green-500 text-red-800 rounded-md p-2"
-          onClick={() => dispatch(increment())}>
-          INCREASE ME WITH RTK {value}
-        </button>
-      </div>
-
-      <div className="mt-4">
-        <Joke />
-      </div>
+    <div className="grid place-items-center w-[100%] h-[100%] bg-[url('bg-app.png')] bg-no-repeat bg-cover bg-center px-4">
+      {!currentPerson ? <FormToken /> : <Letter />}
     </div>
   );
 };

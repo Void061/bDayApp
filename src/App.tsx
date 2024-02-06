@@ -7,9 +7,8 @@ import {
 
 import Root from "./pages/Root";
 
-import { Home, Orders, SingleOrder } from "./pages/Dasboard";
+import { Home } from "./pages/Dasboard";
 import { DashboardLayout } from "./layouts";
-import { Login } from "./pages";
 
 import { useEffect } from "react";
 import AOS from "aos";
@@ -25,12 +24,8 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<Root />}>
         <Route element={<DashboardLayout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="orders" element={<Orders />} />
-          <Route path="order/:slug" element={<SingleOrder />} />
+          <Route path="/" element={<Home />} />       
         </Route>
-        <Route path="login" element={<Login />} />
-        <Route path="register" element={<h3>REGISTER PAGE</h3>} />
       </Route>
     )
   );
