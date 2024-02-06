@@ -21,7 +21,7 @@ const FormToken = () => {
       data-aos="zoom-out">
       <form
         onSubmit={validatePerson}
-        className="flex gap-4 items-center flex-wrap">
+        className="grid grid-cols-2">
         <input
           onChange={handleToken}
           type="text"
