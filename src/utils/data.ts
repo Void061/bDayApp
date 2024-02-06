@@ -73,7 +73,7 @@ const PeopleData: People = [
     id: 0,
     token: "LUB-GS7",
     message:
-      "Ciao Lub, o dovrei dire lubely lubby, grazie per essere qui stasera come ormai da 6 anni a questa parte, la tua presenza è quella più speciale, perchè sei la persona più importante qui stasera, ti ringrazio di essere sempre al mio fianco, di consigliarmi, aiutarmi e sostenermi nei momenti peggiori, grazie per essere sempre pronta a festeggiare con me di qualsiasi traguardo, Ti amo.",
+      "Ciao Lub, o dovrei dire lubely lubby, grazie per essere qui stasera come ormai da 6 anni a questa parte, la tua presenza è quella più speciale, perchè sei la persona più importante qui stasera, ti ringrazio di essere sempre al mio fianco, di consigliarmi, aiutarmi e sostenermi nei momenti peggiori, grazie per essere sempre pronta a festeggiare con me di qualsiasi traguardo raggiunto, Ti amo.",
     name: "Lubely lub",
   },
 ];
